@@ -1,5 +1,5 @@
 What is a gitignore file and what should it include for a Java project?
-Gitignore files are text files that designate which files in a local repository should not be pushed to the remote repository, such as temp files, project-specific files, and system files. This prevents the shared repository from being cluttered with documents that aren't useful or could cause conflicts for other users working on the code. For a java project, it might include .class and .jar files. If we're working in Eclipse, we would also include .project and .tmp files. For Mac users like me, we would also want to add .DS_Store to the gitignore.
+Gitignore files designate which files in a local repository should not be pushed to the remote repository, such as temp files, project-specific files, system files, or directories. This prevents the shared repository from being cluttered with documents that aren't useful or could cause conflicts for other users working on the code. For a java project, it might include .class and .jar files. If we're working in Eclipse, we would also include .project and .tmp files. For Mac users like me, we would also want to add .DS_Store to the gitignore.
 
 What does fast-forward in Git mean?
 Fast-forward is something that happens during a merge between two different commit points (such as between a master and one of its branches) where one point comes before the other in terms of their change history, and there are no other diverging commits causing merge issues, Git simply moves the pointer forward to the more recent point because all of the data in the more recent point includes the changes from the previous point.
@@ -8,4 +8,4 @@ Why should you have different branches?
 Having branches means that archival information on all the different states that the code has been in are stored and can be restored later if necessary. It's also useful when different programmers are working on the same source code to keep track of which changes came from who and what lines are changed, in case there are conflicts (like where two people change the same line in two different ways).
 
 In a project how many remote Git repositories do you usually have?
-There should be at least one, but there can be more if the project requires it.
+There should be at least one, but there can be more if the project requires it. This might be useful if different teams working on different parts of the same overall project don't need to have any overlap in their code, so they don't need to worry about merging their work with other teams' stuff unnecessarily.
